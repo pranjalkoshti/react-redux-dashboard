@@ -7,7 +7,10 @@ p{
     padding:15px;
 }
 .conversation .left-side{
-    width:200px;
+    width:15%;
+}
+.conversation .right-side{
+    width:80%;
 }
 .conversation .right-side span{
     display:inline-block;

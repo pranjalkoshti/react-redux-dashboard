@@ -2,10 +2,10 @@ import * as types from './types';
 
 export const initialState={
     conversations:[
-        {id:'1',name:'Ravi',date:'date',body:' Line 37:  Expected to return a value at the end of arrow function  array-callback-return',userId:'1'},
-        {id:'2',name:'Ravi',date:'date',body:' Line 37:  Expected to return a value at the end of arrow function  array-callback-return',userId:'1'},
-        {id:'3',name:'Ravi',date:'date',body:' Line 37:  Expected to return a value at the end of arrow function  array-callback-return',userId:'1'},
-        {id:'4',name:'Ravi',date:'date',body:' Line 37:  Expected to return a value at the end of arrow function  array-callback-return',userId:'2'},
+        {id:'1',name:'Ravi',date:'date',body:' Some lines of conversation Some lines of conversationSome lines of conversation Some lines of conversationSome lines of conversationSome lines of conversationSome lines of conversationSome lines of conversationSome lines of conversationSome lines of conversationSome lines of conversationSome lines of conversationSome lines of conversationSome lines of conversationSome lines of conversation',userId:'1'},
+        {id:'2',name:'Ravi',date:'date',body:' Some lines of conversation Some lines of conversationSome lines of conversation Some lines of conversationSome lines of conversation',userId:'1'},
+        {id:'3',name:'Ravi',date:'date',body:' Some lines of conversation Some lines of conversationSome lines of conversation Some lines of conversationSome lines of conversationSome lines of conversationSome lines of conversationSome lines of conversationSome lines of conversation',userId:'1'},
+        {id:'4',name:'Ravi',date:'date',body:' Some lines of conversation Some lines of conversationSome lines of conversationSome lines of conversationSome lines of conversationSome lines of conversationSome lines of conversationSome lines of conversationSome lines of conversation',userId:'2'},
     ],
     threads:[
         {id:'1',title:'John Boo', status:'ok',latestUpdates:'Short intro of latest updates Short intro of latest updates Short intro of latest updates ',nextDate:'xyz',userName:'user name 2',profileImg:''},
