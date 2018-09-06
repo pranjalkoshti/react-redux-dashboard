@@ -1,0 +1,40 @@
+.section-container{
+    margin-top:1em;
+}
+.threads-table{
+    table-layout: fixed;
+    width: 100%;
+}
+.threads-table th ,.threads-table td{
+    padding:0.7em;
+}
+.threads-table>thead th:nth-child(1){
+    width:10%;
+}
+.threads-table>thead th:nth-child(2){
+    width:10%;
+}
+.threads-table>thead th:nth-child(3){
+    width:15%;
+}
+.threads-table>thead th:nth-child(4){
+    width:15%;
+}
+.threads-table>thead th:nth-child(5){
+    width:5%;
+}
+.threads-table thead{
+    background:#f3f3f3;
+    border-top:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+}
+.threads-table tbody tr{
+    border-bottom:1px solid #cccccc;
+}
+
+.greenBadge{    
+    background-color:#00ba00;
+}
+.greyBadge{
+    background-color:#8b8888;
+}

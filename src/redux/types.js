@@ -1,0 +1,7 @@
+
+
+export const THREAD_CLICK_HANDLER  = 'THREAD_CLICK_HANDLER';
+
+export const FILTERS_HANDLER  = 'FILTERS_HANDLER';
+
+export const RESET_FILTERS  = 'RESET_FILTERS';

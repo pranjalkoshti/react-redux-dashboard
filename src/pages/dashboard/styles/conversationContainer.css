@@ -1,0 +1,21 @@
+p{
+    margin:0;
+    padding:0;
+}
+.conversation .left-side, .conversation .right-side{
+    display:inline-block;
+    padding:15px;
+}
+.conversation .left-side{
+    width:200px;
+}
+.conversation .right-side span{
+    display:inline-block;
+    padding:0 10px;
+}
+.conversation .right-side p{
+    padding:10px;
+}
+.conversation{
+    border-bottom:1px solid #dbdbdb;
+}
