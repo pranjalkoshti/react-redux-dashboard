@@ -56,7 +56,32 @@ export const rootReducer = (state = initialState, action)=>{
                }
             }
         );
-        console.log(filteredThreads)
+
+        // filteredThreads = filters.map(
+
+        //     function(filter){ 
+
+        //        let array = state.threads.filter((thread)=>{
+        //            let a =filter.filter;
+        //            if(filter.filter == 'userNameFilter'){
+        //             if(thread.userName == filter.value){   alert()
+        //                 return thread;
+        //             }
+        //            }
+        //            if(filter.filter == 'statusFilter'){
+        //             if(thread.status == filter.value){   alert()
+        //                 return thread;
+        //             }
+        //            }
+                     
+        //        })
+               
+        //          return array;
+        //     }
+        // );
+
+
+
         return {
             ...state, filteredThreads: filteredThreads,filterApplied:true 
         };

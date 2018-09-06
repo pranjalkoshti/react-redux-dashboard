@@ -9,7 +9,7 @@ class Filters extends Component {
   constructor(props){
     super(props)
     this.state = {
-      value:'user name 1',
+      value:'user name 2',
       filterName:'userNameFilter',
       filters:[]
     }
@@ -20,11 +20,19 @@ class Filters extends Component {
   }
 
   applyFilter(){
-    // if(this.state.value !== "" && this.state.filterName !== ""){
-    //   const value = this.state.value;
-    //   const filterName = this.state.filterName;
-    //   this.props.filtersHandler(value,filterName)
-    // }
+    if(this.state.value !== "" && this.state.filterName !== "" && this.state.filters.length == 0){
+      let filters = [...this.state.filters];
+      const value = this.state.value;
+      const filterName = this.state.filterName;
+      
+      let object = {value:value, filter:filterName}
+      filters.push(object);
+      this.setState({
+        filters:filters
+      })
+
+      this.props.filtersHandler(filters)
+    }
     if(this.state.filters.length!== 0){
       this.props.filtersHandler(this.state.filters)
     }
@@ -79,7 +87,7 @@ class Filters extends Component {
         } 
         return filter
       })
-      console.log(updatedFilter)
+
       this.setState({
         value:value,
         filterName:'statusFilter',
@@ -103,11 +111,11 @@ class Filters extends Component {
       return (
         <Card type="inner" title="Filters"  style={{ width: 'auto',borderRadius:'5px',border:'1px solid #1890ff' }}>
         <div>
-            <Select defaultValue="user name 2" style={{ width: 120, display:'inline-block', margin:'0 15px', width:'30%'}} onChange={this.updateUserNameFilter}>
+            <Select defaultValue="user name 2" style={{ display:'inline-block', margin:'0 15px', width:'30%'}} onChange={this.updateUserNameFilter}>
                 <Option value="user name 1">User Name 1</Option>
                 <Option value="user name 2">User Name 2</Option>
              </Select>
-             <Select defaultValue="ok" style={{ width: 120,  display:'inline-block', margin:'0 15px',width:'25%' }} onChange={this.updateStatusFilter} >
+             <Select defaultValue="ok" style={{  display:'inline-block', margin:'0 15px',width:'25%' }} onChange={this.updateStatusFilter} >
                 <Option value="ok">Ok</Option>
                 <Option value="blocked">Blocked</Option>
              </Select>

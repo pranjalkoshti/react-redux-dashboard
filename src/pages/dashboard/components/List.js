@@ -68,10 +68,10 @@ function ThreadRow(props){
 
 function StatusBadge(props){
     let className="";
-    if(props.status == 'ok'){
+    if(props.status === 'ok'){
         className = 'greenBadge'
     }
-    if(props.status == 'blocked'){
+    if(props.status === 'blocked'){
         className = 'greyBadge'
     }
 
